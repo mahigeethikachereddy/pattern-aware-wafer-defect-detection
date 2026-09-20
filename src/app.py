@@ -192,7 +192,7 @@ def main():
                 st.metric("Confidence", f"{confidence:.1f}%")
 
                 # Progress bar for confidence
-                st.progress(min(confidence / 100, 1.0))
+                st.progress(float(min(confidence / 100.0, 1.0)))
 
                 # Probability breakdown
                 st.markdown("#### Class Probabilities")
