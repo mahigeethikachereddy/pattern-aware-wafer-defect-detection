@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Large datasets / processed training data
+data/raw/
+data/processed/
+
+# OS
+.DS_Store
+
+# IDE
+.vscode/
+
+# Logs
+*.log
