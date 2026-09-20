@@ -1,3 +1,4 @@
+App Link : https://pattern-aware-wafer-defect-detection.streamlit.app/
 # Pattern-Aware AI for Semiconductor Wafer Defect Detection and Localization
 
 ## Overview
