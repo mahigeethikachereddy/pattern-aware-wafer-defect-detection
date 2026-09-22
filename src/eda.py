@@ -219,7 +219,7 @@ def plot_heatmap_examples(X, y, y_names, n_samples=3):
     plt.close()
 
 
-def summary_report(meta, X_train, y_train, y_train_names, X_test, y_test, y_test_names):
+def summary_report(meta, X_train, y_train, y_train_names, X_val, y_val, y_val_names, X_test, y_test, y_test_names):
     """Print a comprehensive summary report."""
     print("\n" + "=" * 60)
     print("EXPLORATORY DATA ANALYSIS — SUMMARY REPORT")
@@ -284,4 +284,4 @@ if __name__ == "__main__":
     plot_heatmap_examples(X_train, y_train, y_train_names, n_samples=4)
 
     # Print summary
-    summary_report(meta, X_train, y_train, y_train_names, X_test, y_test, y_test_names)
+    summary_report(meta, X_train, y_train, y_train_names, X_val, y_val, y_val_names, X_test, y_test, y_test_names)

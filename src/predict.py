@@ -48,6 +48,7 @@ def predict_image(image_path, model):
 
     # Generate Grad-CAM
     tensor.requires_grad_(True)
+    model.zero_grad()
     output = model(tensor)
     output[0, pred_idx].backward()
 

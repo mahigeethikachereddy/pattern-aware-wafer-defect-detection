@@ -9,8 +9,10 @@ Run: python src/data_loader.py
 
 import os
 import sys
+import json
 import pickle
 import numpy as np
+import cv2
 from sklearn.model_selection import train_test_split
 
 # Add project root to path
@@ -120,7 +122,6 @@ def wafer_to_array(wafer_map, img_size=IMG_SIZE):
     normalized = w / 2.0
 
     # Always resize to target resolution
-    import cv2
     normalized = cv2.resize(normalized, (img_size, img_size),
                             interpolation=cv2.INTER_NEAREST)
 
@@ -231,7 +232,6 @@ def build_datasets(df):
         "split_method": "stratified",
     }
     np.save(os.path.join(PROCESSED_DIR, "metadata.npy"), meta)
-    import json
     with open(os.path.join(PROCESSED_DIR, "metadata.json"), "w") as f:
         json.dump(meta, f, indent=2)
 

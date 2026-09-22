@@ -276,6 +276,5 @@ def run_training():
     print(f"\n[✓] Training complete. Model ready for evaluation.")
     return model, history
 
-
 if __name__ == "__main__":
     run_training()
