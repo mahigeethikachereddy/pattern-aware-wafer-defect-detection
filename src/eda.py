@@ -28,7 +28,6 @@ os.makedirs(OUTPUT_DIR, exist_ok=True)
 # 0 = black (no die), 0.5 = gray (good die), 1.0 = white (defect)
 CMAP_LEVELS = {0: "black", 0.5: "#808080", 1.0: "#ffffff"}
 
-
 def load_metadata():
     """Load dataset metadata."""
     with open("data/processed/metadata.json") as f:

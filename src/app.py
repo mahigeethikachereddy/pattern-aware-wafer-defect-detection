@@ -1,15 +1,3 @@
-"""
-Stage 4: Streamlit Web Application
-======================================
-Upload a wafer map image to get:
-- Predicted defect class
-- Confidence score
-- Wafer visualization
-- Grad-CAM heatmap showing suspicious regions
-
-Run: streamlit run src/app.py
-"""
-
 import os
 import sys
 import json

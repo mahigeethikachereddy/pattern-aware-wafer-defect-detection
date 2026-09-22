@@ -1,19 +1,3 @@
-"""
-Pattern-Aware AI for Semiconductor Wafer Defect Detection and Localization
-===========================================================================
-Entry point for the complete project pipeline.
-
-Usage:
-    python main.py --stage eda          # Dataset inspection & EDA
-    python main.py --stage train        # Train the CNN model
-    python main.py --stage evaluate     # Evaluate the model
-    python main.py --stage gradcam      # Generate Grad-CAM visualizations
-    python main.py --stage app          # Launch Streamlit web application
-    python main.py --stage all          # Run all stages sequentially
-
-Run: streamlit run src/app.py
-"""
-
 import sys
 import os
 import argparse
